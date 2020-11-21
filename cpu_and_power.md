@@ -11,8 +11,9 @@
 #### CPU Frequency Scaling
 |Subject|Path|Options|
 |-|-|-|
-|Scaling Governor|/sys/devices/system/cpu/cpu*/cpufreq/scaling_governor|performance<br>**powersave**|
-|Power Preference|/sys/devices/system/cpu/cpu*/cpufreq/energy_performance_preference|default<br>performance<br>**balance_performance**<br>balance_power<br>power|
+|Scaling Governor (AMD)|/sys/devices/system/cpu/cpu*/cpufreq/scaling_governor|conservative<br>**ondemand**<br>userspace<br>powersave<br>performance<br>schedutil|
+|Scaling Governor (Intel)|/sys/devices/system/cpu/cpu*/cpufreq/scaling_governor|performance<br>**powersave**|
+|Power Preference (Intel)|/sys/devices/system/cpu/cpu*/cpufreq/energy_performance_preference|default<br>performance<br>**balance_performance**<br>balance_power<br>power|
 
 #### Turbo Boost
 |Platform|Location|Flag|
